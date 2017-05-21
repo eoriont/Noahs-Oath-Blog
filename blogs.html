@@ -3,16 +3,14 @@ layout: default
 title: Blogs
 ---
 
+<ul>
+  {% for post in site.posts limit 4 %}
+  <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    {{ post.content | strip_html | truncatewords:20 }} <br>
+    <a href="{{ post.url }}">Read More...</a><br><br>
+    {% endfor %}
+</ul>
 
-
-{% for post in site.posts %}
-  <!--<div class="card">
-    <a href="{{ post.url }}">
-      <img src="images/{{ post.title }}.png" alt="Avatar" style="width:100%" class="avatar" >
-      <div class="card-container">
-        <h4><b>{{ post.title }}</b></h4>
-      </div>
-    </a>
-  </div>-->
+<!-- {% for post in site.posts %}
   <a href="{{ post.url }}" class="btn btn-default">{{ post.title }}</a><br>
-{% endfor %}
+{% endfor %} -->
