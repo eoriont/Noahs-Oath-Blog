@@ -40,20 +40,19 @@
       </nav>
 
       <div class="container">
-        <div class="page-header">
-          <h1 class="entry-title">
+
+          <h2 class="entry-title">
             {% if page.title %}
 
               {{ page.title }}
               <small> {{ page.date | date: "%m/%d/%y"}} </small>
             {% endif %}
-          </h1>
+          </h2>
           {% if page.version %}
 
           {{ page.version }}
 
           {% endif %}
-          </div>
         <br>
           <p>{{ content }}</p>
           {% if page.comments %}
