@@ -1,8 +1,14 @@
-<div class="well well-lg">
+<div class="well well-bg">
+<div class="page-header">
   <h1 class="entry-title">
     {% if post.title %}
-      <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+
+      {{ post.title }}
+      <small> {{ post.date | date: "%m/%d/%y"}} </small>
     {% endif %}
   </h1>
+  </div>
   <div class="entry-content">{{ content }}</div>
+  <br><br>
+  <a href="{{ root_url }}{{ post.url }}" class= "btn btn-info btn-sm">Read more</a>
 </div>
