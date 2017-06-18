@@ -51,10 +51,10 @@
           </h2>
           {% if page.version %}
 
-          {{ page.version }}
+          <p id="version">{{ page.version }}</p>
 
           {% endif %}
-        <br>
+        <br><br>
           <p>{{ content }}</p>
           {% if page.comments %}
           <br><br><br><br><br>
@@ -75,8 +75,12 @@
       </div>
     </body>
     <style>
-    p {
-    line-height: 30px;
+#version {
+  color: #696969;
 }
-</style>
+p {
+line-height: 30px;
+font-size: 16px;
+}
+    </style>
 </html>
