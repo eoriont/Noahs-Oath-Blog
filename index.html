@@ -9,6 +9,6 @@ comments: false
 </div>
 <div class="blog-index">
   {% assign post = site.posts.first %}
-  {% assign content = post.content %}
+  {% assign content = post.content | strip_html | truncatewords: 20 %}
   {% include post_detail.html %}
 </div>
