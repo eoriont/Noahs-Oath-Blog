@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  
 }
 
 .nav, .dropbtn, .dropdown-content {
@@ -135,9 +136,9 @@ html {
 }
 
 .avatar {
-    height: auto; 
-    width: auto; 
-    max-width: 300px; 
+    height: auto;
+    width: auto;
+    max-width: 300px;
     max-height: 300px;
 }
 
